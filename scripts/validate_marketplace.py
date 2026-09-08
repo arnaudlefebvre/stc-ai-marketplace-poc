@@ -78,6 +78,34 @@ def main() -> None:
             if not text.startswith("---\n") or "\nname:" not in text or "\ndescription:" not in text:
                 fail(f"{skill_file.relative_to(ROOT)}: invalid or missing skill frontmatter")
 
+            openai_yaml = skill_file.parent / "agents" / "openai.yaml"
+            if not openai_yaml.is_file():
+                fail(f"{skill_file.parent.relative_to(ROOT)}: missing agents/openai.yaml")
+            metadata = openai_yaml.read_text(encoding="utf-8")
+            policy_lines = []
+            in_policy = False
+            policy_indent = None
+            for line in metadata.splitlines():
+                stripped = line.strip()
+                indent = len(line) - len(line.lstrip())
+                if stripped == "policy:":
+                    in_policy = True
+                    policy_indent = indent
+                    continue
+                if in_policy:
+                    if stripped and indent <= policy_indent:
+                        in_policy = False
+                    elif stripped and not stripped.startswith("#"):
+                        policy_lines.append(stripped)
+            for policy_line in policy_lines:
+                key, sep, value = policy_line.partition(":")
+                if not sep:
+                    fail(f"{openai_yaml.relative_to(ROOT)}: invalid policy entry {policy_line!r}")
+                if key != "allow_implicit_invocation":
+                    fail(f"{openai_yaml.relative_to(ROOT)}: unsupported policy field {key!r}; only allow_implicit_invocation is accepted")
+                if value.strip() not in {"true", "false"}:
+                    fail(f"{openai_yaml.relative_to(ROOT)}: allow_implicit_invocation must be true or false")
+
         print(f"OK: {name}")
 
     print(f"Validated {len(seen)} plugin(s) in {marketplace['name']}")

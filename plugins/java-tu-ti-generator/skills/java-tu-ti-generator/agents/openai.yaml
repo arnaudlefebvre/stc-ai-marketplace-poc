@@ -2,7 +2,4 @@ interface:
   display_name: Java TU/TI Generator
   short_description: Generate or update Java 8/11 unit and integration tests while matching repository conventions.
 policy:
-  products:
-    - chatgpt
-    - codex
   allow_implicit_invocation: true
