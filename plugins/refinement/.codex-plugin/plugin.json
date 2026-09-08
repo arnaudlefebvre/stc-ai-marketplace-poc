@@ -1,0 +1,23 @@
+{
+  "name": "refinement",
+  "version": "0.1.0",
+  "description": "Refine a user story before development by exposing ambiguities, acceptance criteria, edge cases, dependencies, risks and test scenarios.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "keywords": ["refinement", "user-story", "acceptance-criteria", "planning", "agile"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Refinement",
+    "shortDescription": "Refine user stories before development",
+    "longDescription": "Challenge and enrich a user story before implementation. Identify missing information, functional rules, acceptance criteria, edge cases, dependencies, risks and useful test scenarios without inventing unresolved business decisions.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read"],
+    "defaultPrompt": [
+      "Refine this user story before development.",
+      "Challenge this ticket and identify missing decisions.",
+      "Turn this requirement into testable acceptance criteria."
+    ]
+  }
+}

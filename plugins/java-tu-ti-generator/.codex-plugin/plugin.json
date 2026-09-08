@@ -1,0 +1,23 @@
+{
+  "name": "java-tu-ti-generator",
+  "version": "0.1.0",
+  "description": "Generate or update Java 8/11 unit and integration tests while following the conventions already present in the repository.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "keywords": ["java", "junit", "mockito", "spring", "tests", "tu", "ti"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Java TU/TI Generator",
+    "shortDescription": "Generate Java unit and integration tests",
+    "longDescription": "Generate or update Java 8/11 unit tests and integration tests by first detecting the conventions of the current module, then matching its JUnit, Mockito, Spring and Maven patterns.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": [
+      "Generate unit tests for this Java class.",
+      "Add integration tests for this method.",
+      "Complete the missing tests while matching this module."
+    ]
+  }
+}
