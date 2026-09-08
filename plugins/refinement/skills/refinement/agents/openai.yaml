@@ -1,5 +1,6 @@
 interface:
-  display_name: Refinement
-  short_description: Challenge and refine user stories into testable, implementation-ready requirements.
+  display_name: "Refinement"
+  short_description: "Refine user stories into testable requirements"
+  default_prompt: "Use $refinement to challenge and refine this requirement before implementation."
 policy:
   allow_implicit_invocation: true

@@ -1,0 +1,21 @@
+{
+  "name": "mysql-to-postgresql-migration",
+  "version": "0.1.0",
+  "description": "Guide Santeclair Java applications through MySQL to PostgreSQL migrations using repository-specific diagnosis and migration conventions.",
+  "author": {"name": "Santeclair - IA Guild"},
+  "keywords": ["mysql", "postgresql", "migration", "liquibase", "testcontainers", "pgloader"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "MySQL to PostgreSQL Migration",
+    "shortDescription": "Guide Santeclair MySQL to PostgreSQL migrations",
+    "longDescription": "Diagnose and guide MySQL to PostgreSQL migration work for Santeclair Java applications, including Liquibase, pgloader, UTF-8, citext, Testcontainers, JPA compatibility and migration troubleshooting.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write", "Execute"],
+    "defaultPrompt": [
+      "Analyze this repository for its MySQL to PostgreSQL migration.",
+      "Help me unblock this PostgreSQL migration.",
+      "Build a repository-specific migration checklist."
+    ]
+  }
+}

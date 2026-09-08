@@ -1,0 +1,6 @@
+interface:
+  display_name: "Markdown Documentation"
+  short_description: "Create clear Markdown and repository documentation"
+  default_prompt: "Use $markdown-documentation to create or improve this Markdown documentation."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,104 @@
+{
+  "gpt-5.6-sol": [
+    {
+      "startDate": "2026-07-09",
+      "endDate": "2026-08-20",
+      "input": 125.0,
+      "cached": 12.50,
+      "output": 750.0
+    },
+    {
+      "startDate": "2026-08-21",
+      "endDate": null,
+      "input": 100.0,
+      "cached": 10.0,
+      "output": 500.0
+    }
+  ],
+  "gpt-5.6-terra": [
+    {
+      "startDate": "2026-07-09",
+      "endDate": "2026-07-29",
+      "input": 62.50,
+      "cached": 6.25,
+      "output": 375.0
+    },
+    {
+      "startDate": "2026-07-30",
+      "endDate": null,
+      "input": 50.0,
+      "cached": 5.0,
+      "output": 300.0
+    }
+  ],
+  "gpt-5.6-luna": [
+    {
+      "startDate": "2026-07-09",
+      "endDate": "2026-07-29",
+      "input": 25.0,
+      "cached": 2.50,
+      "output": 150.0
+    },
+    {
+      "startDate": "2026-07-30",
+      "endDate": null,
+      "input": 5.0,
+      "cached": 0.5,
+      "output": 30.0
+    }
+  ],
+  "gpt-5.5": [
+    {
+      "startDate": "2026-04-02",
+      "endDate": null,
+      "input": 125.0,
+      "cached": 12.50,
+      "output": 750.0
+    }
+  ],
+  "gpt-5.5-cyber": [
+    {
+      "startDate": "2026-04-02",
+      "endDate": null,
+      "input": 500.0,
+      "cached": 50.0,
+      "output": 3000.0
+    }
+  ],
+  "gpt-5.4": [
+    {
+      "startDate": "2026-04-02",
+      "endDate": null,
+      "input": 62.50,
+      "cached": 6.25,
+      "output": 375.0
+    }
+  ],
+  "gpt-5.4-mini": [
+    {
+      "startDate": "2025-01-01",
+      "endDate": null,
+      "input": 18.75,
+      "cached": 1.875,
+      "output": 113.0
+    }
+  ],
+  "gpt-5.3-codex": [
+    {
+      "startDate": "2025-01-01",
+      "endDate": null,
+      "input": 43.75,
+      "cached": 4.375,
+      "output": 350.0
+    }
+  ],
+  "codex-auto-review": [
+    {
+      "startDate": "2025-01-01",
+      "endDate": null,
+      "input": 43.75,
+      "cached": 4.375,
+      "output": 350.0
+    }
+  ]
+}

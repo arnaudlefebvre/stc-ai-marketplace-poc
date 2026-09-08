@@ -1,5 +1,6 @@
 interface:
-  display_name: Java TU/TI Generator
-  short_description: Generate or update Java 8/11 unit and integration tests while matching repository conventions.
+  display_name: "Java TU/TI Generator"
+  short_description: "Generate Java TU/TI matching repository conventions"
+  default_prompt: "Use $java-tu-ti-generator to generate or update Java tests for this code."
 policy:
   allow_implicit_invocation: true

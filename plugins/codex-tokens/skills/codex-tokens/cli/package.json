@@ -1,0 +1,14 @@
+{
+  "name": "codex-tokens-cli",
+  "version": "1.0.0",
+  "description": "A premium Node.js CLI tool to analyze Codex token and credit consumption.",
+  "main": "lib/analyzer.js",
+  "bin": {
+    "codex-tokens": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node bin/cli.js"
+  },
+  "author": "Antigravity",
+  "license": "ISC"
+}

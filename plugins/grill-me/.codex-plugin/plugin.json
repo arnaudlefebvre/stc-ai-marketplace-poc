@@ -1,0 +1,21 @@
+{
+  "name": "grill-me",
+  "version": "0.1.0",
+  "description": "Stress-test a technical plan or design by walking through its decision tree one focused question at a time.",
+  "author": {"name": "Santeclair - IA Guild"},
+  "keywords": ["design", "architecture", "review", "questioning", "planning"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Grill Me",
+    "shortDescription": "Stress-test plans through focused questioning",
+    "longDescription": "Challenge a plan or design iteratively, resolve dependencies between decisions, inspect the codebase when it can answer a question, and provide a recommended answer for each decision.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read"],
+    "defaultPrompt": [
+      "Grill me on this implementation plan.",
+      "Challenge this architecture until the important decisions are resolved.",
+      "Stress-test this design one question at a time."
+    ]
+  }
+}

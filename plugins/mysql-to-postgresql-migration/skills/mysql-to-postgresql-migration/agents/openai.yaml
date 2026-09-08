@@ -1,0 +1,7 @@
+interface:
+  display_name: "MySQL to PostgreSQL Migration"
+  short_description: "Guided MySQL to PostgreSQL migration for Santeclair"
+  default_prompt: "Use $mysql-to-postgresql-migration to analyze a repository, unblock a stuck migration when needed, map it to the migration procedures, and guide or apply the next safe steps."
+
+policy:
+  allow_implicit_invocation: true

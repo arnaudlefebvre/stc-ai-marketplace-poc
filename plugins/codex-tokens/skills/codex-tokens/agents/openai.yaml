@@ -1,0 +1,6 @@
+interface:
+  display_name: "Codex Tokens"
+  short_description: "Analyze Codex token and credit consumption"
+  default_prompt: "Use $codex-tokens to analyze the token and credit consumption for the current Codex session."
+policy:
+  allow_implicit_invocation: true

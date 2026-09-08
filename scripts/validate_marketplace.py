@@ -82,6 +82,16 @@ def main() -> None:
             if not openai_yaml.is_file():
                 fail(f"{skill_file.parent.relative_to(ROOT)}: missing agents/openai.yaml")
             metadata = openai_yaml.read_text(encoding="utf-8")
+            import yaml
+            parsed_metadata = yaml.safe_load(metadata) or {}
+            iface = parsed_metadata.get("interface", {})
+            short = iface.get("short_description", "")
+            if not isinstance(short, str) or not (25 <= len(short) <= 64):
+                fail(f"{openai_yaml.relative_to(ROOT)}: interface.short_description must be 25-64 characters")
+            default_prompt = iface.get("default_prompt")
+            expected_mention = f"${skill_file.parent.name}"
+            if default_prompt is not None and expected_mention not in default_prompt:
+                fail(f"{openai_yaml.relative_to(ROOT)}: interface.default_prompt must mention {expected_mention}")
             policy_lines = []
             in_policy = False
             policy_indent = None

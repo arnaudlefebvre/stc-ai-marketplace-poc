@@ -1,0 +1,21 @@
+{
+  "name": "markdown-documentation",
+  "version": "0.1.0",
+  "description": "Create and improve Markdown documentation, READMEs and GitHub or GitLab flavored technical documentation.",
+  "author": {"name": "Santeclair - IA Guild"},
+  "keywords": ["markdown", "documentation", "readme", "gfm", "technical-writing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Markdown Documentation",
+    "shortDescription": "Create clear Markdown and repository documentation",
+    "longDescription": "Create, format and improve Markdown documentation using standard Markdown and GitHub Flavored Markdown conventions, including READMEs, tables, links, code blocks and technical documentation.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": [
+      "Improve this README and keep it easy to maintain.",
+      "Create Markdown documentation for this project.",
+      "Fix the formatting of this Markdown document."
+    ]
+  }
+}
