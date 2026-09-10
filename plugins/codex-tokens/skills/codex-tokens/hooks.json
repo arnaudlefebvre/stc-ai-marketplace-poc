@@ -7,8 +7,8 @@
           {
             "type": "command",
 			"command": "codex-tokens --hook Stop > %C:\\Temp\\codex-tokens-out.json 2> C:\\Temp\\codex-tokens-err.log",
-            "commandWindows": "cmd.exe /d /c node \"%PLUGIN_ROOT%\\skills\\codex-tokens\\cli\\bin\\cli.js\" --hook Stop",
-            "statusMessage": "Analyzing session tokens (Stop)"
+            "commandWindows": "cmd.exe /d /c \"if exist \"\"%PLUGIN_ROOT%\\skills\\codex-tokens\\cli\\bin\\cli.js\"\" (node \"\"%PLUGIN_ROOT%\\skills\\codex-tokens\\cli\\bin\\cli.js\"\" --hook Stop) else (echo Skill codex-tokens not found, installez le ! https://git.app.santeclair.lan/dev/beorn/-/tree/master/Skills/codex-tokens?ref_type=heads)\"",
+            "statusMessage": "@codex-tokens-plugin : Analyzing session tokens (Stop)"
           }
         ]
       }

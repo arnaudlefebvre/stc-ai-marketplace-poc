@@ -11,7 +11,7 @@ Turn the Confluence procedures into a repo-specific action plan, apply safe chan
 
 ## Workflow
 
-1. Retrieve procedure context with `mcp__jira__.get_confluence_page` when the user references an INIT/PROC page or when the latest internal guidance matters.
+1. Retrieve procedure context with atlassian mcp when the user references an INIT/PROC page or when the latest internal guidance matters.
 2. Inspect the repository with targeted search commands such as `rg`, `fd`, or focused file reads.
 3. Build a personalized migration checklist: applicable, not applicable, blocked, and risky items.
 4. If the user is blocked, switch to a troubleshooting flow before proposing broad edits.

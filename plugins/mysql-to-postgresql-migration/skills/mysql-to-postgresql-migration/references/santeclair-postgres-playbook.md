@@ -4,13 +4,15 @@
 
 Use these Confluence procedures as the source of truth when the latest internal guidance matters:
 
-- INIT: `https://prod-confluence.santeclair.lan/confluence/spaces/DOCDEVOPS/pages/482247410/INIT+-+Migration+PostgreSQL`
-- Preable: `https://prod-confluence.santeclair.lan/confluence/spaces/DOCDEVOPS/pages/482251404/PROC+-+Migration+PostgreSQL.+Pr%C3%A9ambule`
-- Main procedure: `https://prod-confluence.santeclair.lan/confluence/spaces/DOCDEVOPS/pages/394462933/PROC+-+Migration+PostgreSQL`
-- UTF-8: `https://prod-confluence.santeclair.lan/confluence/spaces/DOCDEVOPS/pages/482251367/PROC+-+Migration+UTF-8`
-- Tests Java 11: `https://prod-confluence.santeclair.lan/confluence/spaces/DOCDEVOPS/pages/482251575/PROC+-+Migration+des+tests+H2+vers+PostgreSQL+avec+Testcontainers.+Java11`
+- INIT: `https://santeclair.atlassian.net/wiki/spaces/DOCDEVOPS/pages/125436046/INIT+-+Migrations+PostgreSQL`
+- Preable: `https://santeclair.atlassian.net/wiki/spaces/DOCDEVOPS/pages/125437214/PROC+-+Migration+PostgreSQL.+Pr+ambule`
+- Main procedure: `https://santeclair.atlassian.net/wiki/spaces/DOCDEVOPS/pages/125436339/PROC+-+Migration+PostgreSQL`
+- UTF-8: `https://santeclair.atlassian.net/wiki/spaces/DOCDEVOPS/pages/125439851/PROC+-+Migration+UTF-8`
+- Tests Java 11: `https://santeclair.atlassian.net/wiki/spaces/DOCDEVOPS/pages/125443397/PROC+-+Migration+des+tests+H2+vers+PostgreSQL+avec+Testcontainers.+Java11`
+- Tests Java 8: `https://santeclair.atlassian.net/wiki/spaces/DOCDEVOPS/pages/125443421/PROC+-+Migration+des+tests+H2+vers+PostgreSQL+avec+Testcontainers.+Java+8`
+- Tests Quarkus 3: `https://santeclair.atlassian.net/wiki/spaces/DOCDEVOPS/pages/125444861/PROC+-+Migration+des+tests+H2+vers+PostgreSQL+avec+Testcontainers.+Quarkus+3`
 
-Refresh them with `mcp__jira__.get_confluence_page` instead of relying on stale memory.
+Always refresh them with atlassian mcp if available instead of relying on stale memory.
 
 ## Migration Intent
 
