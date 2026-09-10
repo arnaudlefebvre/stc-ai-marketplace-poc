@@ -11,13 +11,16 @@ ONLY IF USER ASK TO : This skill allows you to analyze, report, and optimize the
 
 ## Auto-Installation Instructions for the Agent
 
-If the command `codex-tokens` is not found or fails in the shell, the agent must run the auto-installation script of this skill to set up the CLI tool globally:
+If the command `codex-tokens` is not found or fails in the shell, the agent must run the auto-installation script from the installed plugin root to set up the CLI tool globally:
 
 ```powershell
-node ~\.codex\skills\codex-tokens\scripts\install.js
+if (-not $env:PLUGIN_ROOT) { throw "PLUGIN_ROOT is not available for the installed plugin." }
+node (Join-Path $env:PLUGIN_ROOT 'skills\codex-tokens\scripts\install.js')
 ```
 
 This script will change directory to the skill's self-contained `cli` directory and run `npm install -g .` to register `codex-tokens` globally in the user's shell path.
+
+The plugin version is managed in `.codex-plugin/plugin.json` and follows SemVer. The bundled npm CLI package has its own independent version in `cli/package.json`; it must not be used to build a plugin installation path. Plugin hooks execute the version currently installed by the marketplace through the `PLUGIN_ROOT` environment variable.
 
 ---
 

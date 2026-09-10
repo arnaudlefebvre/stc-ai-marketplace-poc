@@ -64,6 +64,25 @@ def main() -> None:
             fail(f"{name}: version must be semver")
         if not manifest.get("description") or not manifest.get("author", {}).get("name"):
             fail(f"{name}: description and author.name are required")
+        declared_hooks = manifest.get("hooks")
+        if declared_hooks is not None:
+            hook_paths = declared_hooks if isinstance(declared_hooks, list) else [declared_hooks]
+            if not all(isinstance(hook_path, str) for hook_path in hook_paths):
+                fail(f"{name}: manifest hooks paths must be strings in this marketplace")
+            for hook_path in hook_paths:
+                if not hook_path.startswith("./"):
+                    fail(f"{name}: hook path must start with ./")
+                resolved_hook = (plugin_dir / hook_path[2:]).resolve()
+                try:
+                    resolved_hook.relative_to(plugin_dir)
+                except ValueError:
+                    fail(f"{name}: hook path escapes plugin root")
+                if not resolved_hook.is_file():
+                    fail(f"{name}: missing hook file {hook_path}")
+                try:
+                    json.loads(resolved_hook.read_text(encoding="utf-8"))
+                except Exception as exc:
+                    fail(f"{resolved_hook.relative_to(ROOT)}: invalid hook JSON: {exc}")
         interface = manifest.get("interface", {})
         for field in ("displayName", "shortDescription", "longDescription", "developerName", "category"):
             if not interface.get(field):

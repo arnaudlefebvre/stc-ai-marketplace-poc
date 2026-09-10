@@ -1,10 +1,11 @@
 {
   "name": "codex-tokens",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Analyze Codex session token usage and estimate OpenAI credit consumption using the bundled codex-tokens CLI.",
   "author": {"name": "Santeclair - IA Guild"},
   "keywords": ["codex", "tokens", "credits", "cost", "usage"],
   "skills": "./skills/",
+  "hooks": "./skills/codex-tokens/hooks.json",
   "interface": {
     "displayName": "Codex Tokens",
     "shortDescription": "Analyze Codex token and credit consumption",

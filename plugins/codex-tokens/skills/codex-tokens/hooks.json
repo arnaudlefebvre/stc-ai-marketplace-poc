@@ -7,7 +7,7 @@
           {
             "type": "command",
 			"command": "codex-tokens --hook Stop > %C:\\Temp\\codex-tokens-out.json 2> C:\\Temp\\codex-tokens-err.log",
-            "commandWindows": "cmd.exe /d /c node %USERPROFILE%\\.codex\\skills\\codex-tokens\\cli\\bin\\cli.js --hook Stop",			
+            "commandWindows": "cmd.exe /d /c node \"%PLUGIN_ROOT%\\skills\\codex-tokens\\cli\\bin\\cli.js\" --hook Stop",
             "statusMessage": "Analyzing session tokens (Stop)"
           }
         ]

@@ -12,5 +12,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install validator dependency
+        run: python -m pip install PyYAML
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Validate structure
         run: python scripts/validate_marketplace.py
+      - name: Smoke-test bundled CLI
+        run: python scripts/test_codex_tokens_plugin.py
