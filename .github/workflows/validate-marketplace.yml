@@ -21,3 +21,5 @@ jobs:
         run: python scripts/validate_marketplace.py
       - name: Smoke-test bundled CLI
         run: python scripts/test_codex_tokens_plugin.py
+      - name: Test installer scenarios
+        run: node scripts/test_codex_tokens_installer.js

@@ -11,14 +11,14 @@ ONLY IF USER ASK TO : This skill allows you to analyze, report, and optimize the
 
 ## Auto-Installation Instructions for the Agent
 
-If the command `codex-tokens` is not found or fails in the shell, the agent must run the auto-installation script from the installed plugin root to set up the CLI tool globally:
+If the command `codex-tokens` is not found or fails in the shell, the agent may install the bundled CLI globally. `PLUGIN_ROOT` is available only inside a Codex plugin hook and must not be required in a normal PowerShell session. Invoke `scripts/install.js` from the absolute path of the currently loaded plugin:
 
 ```powershell
-if (-not $env:PLUGIN_ROOT) { throw "PLUGIN_ROOT is not available for the installed plugin." }
-node (Join-Path $env:PLUGIN_ROOT 'skills\codex-tokens\scripts\install.js')
+node "<installed-plugin-root>\skills\codex-tokens\scripts\install.js"
 ```
 
-This script will change directory to the skill's self-contained `cli` directory and run `npm install -g .` to register `codex-tokens` globally in the user's shell path.
+This script first removes the existing global `codex-tokens-cli` installation when present, packages the bundled CLI with `npm pack`, and installs the resulting archive globally. It does not modify the marketplace cache or any other npm package.
+On Windows, the installer invokes `npm.cmd` through the shell so that it works with the usual PowerShell/npm launcher. If npm cannot be started, the error identifies the selected command and the `ENOENT` or `EPERM` cause. The `create` message sometimes printed before the command is wrapper noise from the Codex execution environment and is unrelated to this installer.
 
 The plugin version is managed in `.codex-plugin/plugin.json` and follows SemVer. The bundled npm CLI package has its own independent version in `cli/package.json`; it must not be used to build a plugin installation path. Plugin hooks execute the version currently installed by the marketplace through the `PLUGIN_ROOT` environment variable.
 
