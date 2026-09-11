@@ -1,0 +1,17 @@
+{
+  "name": "diagnosing-bugs",
+  "version": "0.1.0",
+  "description": "Diagnose hard bugs and performance regressions through a disciplined feedback loop.",
+  "author": {"name": "Santeclair - IA Guild"},
+  "keywords": ["debugging", "diagnosis", "bugs", "regressions", "performance"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Diagnosing Bugs",
+    "shortDescription": "Diagnose hard bugs and regressions",
+    "longDescription": "Build a tight red-or-green feedback loop, test hypotheses, and diagnose difficult bugs or performance regressions while redacting sensitive evidence.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Execute"],
+    "defaultPrompt": ["Diagnose this bug.", "Help me investigate this performance regression."]
+  }
+}

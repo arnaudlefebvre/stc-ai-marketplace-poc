@@ -1,0 +1,17 @@
+{
+  "name": "grilling",
+  "version": "0.1.0",
+  "description": "Stress-test a plan, decision or idea through a structured interview and decision tree.",
+  "author": {"name": "Santeclair - IA Guild"},
+  "keywords": ["grilling", "planning", "design", "architecture", "decisions"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Grilling",
+    "shortDescription": "Stress-test thinking through focused questions",
+    "longDescription": "Interview the user about a plan, decision or idea, map the design tree, and resolve its decision frontier round by round.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read"],
+    "defaultPrompt": ["Grill me on this plan.", "Stress-test this design one question at a time."]
+  }
+}

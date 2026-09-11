@@ -28,6 +28,18 @@ plugins/
     skills/wait-what/
       SKILL.md
       agents/openai.yaml
+  grilling/
+    .codex-plugin/plugin.json
+    skills/grilling/
+  diagnosing-bugs/
+    .codex-plugin/plugin.json
+    skills/diagnosing-bugs/
+  teach/
+    .codex-plugin/plugin.json
+    skills/teach/
+  grill-with-docs/
+    .codex-plugin/plugin.json
+    skills/grill-with-docs/
 ```
 
 Les plugins sont volontairement **skill-only** : aucun MCP ni aucune App n'est requis pour ce POC.

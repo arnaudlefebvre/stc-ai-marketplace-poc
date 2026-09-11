@@ -1,0 +1,17 @@
+{
+  "name": "grill-with-docs",
+  "version": "0.1.0",
+  "description": "Sharpen a plan or design through a relentless interview while creating decision documents.",
+  "author": {"name": "Santeclair - IA Guild"},
+  "keywords": ["grilling", "documentation", "adr", "glossary", "design"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Grill with Docs",
+    "shortDescription": "Grill a design and write its docs",
+    "longDescription": "Interview the user to resolve design decisions and produce the associated architecture decision records and glossary as the design evolves.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": ["Grill this design and document the decisions.", "Help me produce ADRs while refining this plan."]
+  }
+}

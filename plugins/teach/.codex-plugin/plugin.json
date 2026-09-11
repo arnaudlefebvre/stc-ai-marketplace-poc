@@ -1,0 +1,17 @@
+{
+  "name": "teach",
+  "version": "0.1.0",
+  "description": "Teach a concept through a stateful, guided learning workspace.",
+  "author": {"name": "Santeclair - IA Guild"},
+  "keywords": ["teaching", "learning", "education", "lessons", "workspace"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Teach",
+    "shortDescription": "Learn a concept in a guided workspace",
+    "longDescription": "Guide the user through stateful lessons grounded in a mission, reference materials, resources, and learning records maintained in the workspace.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": ["Teach me this concept.", "Start a guided learning session."]
+  }
+}
