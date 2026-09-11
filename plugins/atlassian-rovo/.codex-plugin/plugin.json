@@ -1,12 +1,18 @@
 {
   "name": "atlassian-rovo",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Connect Codex Desktop to the official Atlassian Rovo MCP server for Jira and Confluence.",
   "author": {
     "name": "Santeclair - IA Guild"
   },
   "homepage": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
-  "keywords": ["atlassian", "rovo", "mcp", "jira", "confluence"],
+  "keywords": [
+    "atlassian",
+    "rovo",
+    "mcp",
+    "jira",
+    "confluence"
+  ],
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Atlassian Rovo",
@@ -14,11 +20,16 @@
     "longDescription": "Connect Codex Desktop to the official Atlassian Rovo MCP v2 server. The MCP configuration is installed with the plugin and each user authenticates with Atlassian using their own permissions.",
     "developerName": "Santeclair - IA Guild",
     "category": "Developer Tools",
-    "capabilities": ["Interactive", "Read", "Write"],
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
     "defaultPrompt": [
       "Find my assigned Jira issues.",
       "Search Confluence for documentation about this project.",
       "Summarize the Jira context related to this code change."
     ]
-  }
+  },
+  "skills": "./skills/"
 }

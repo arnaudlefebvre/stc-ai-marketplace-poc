@@ -1,12 +1,10 @@
-# Atlassian Rovo MCP plugin
+# Atlassian Rovo
 
-This plugin installs the Atlassian Rovo MCP configuration in Codex Desktop through the STC plugin marketplace.
+Codex Desktop plugin containing:
 
-The MCP server itself is remote:
+- a local plugin Skill for Jira/Confluence workflows;
+- a `.mcp.json` declaration for the official Atlassian Rovo remote MCP server.
 
-`https://mcp.atlassian.com/v2/mcp`
+The MCP server remains remote (`https://mcp.atlassian.com/v2/mcp`), but its configuration is delivered to Codex through the locally installed plugin.
 
-No local Node, Docker, uv/uvx or manual `config.toml` entry is required for this plugin.
-Each user still authenticates with Atlassian using their own account and existing Jira/Confluence permissions.
-
-The plugin is expected to be Desktop-only because it declares an MCP server.
+Each user authenticates with Atlassian using their own account and permissions.
