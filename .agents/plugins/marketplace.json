@@ -87,6 +87,30 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "consolidate-jira-absences",
+      "source": {
+        "source": "local",
+        "path": "./plugins/consolidate-jira-absences"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "wait-what",
+      "source": {
+        "source": "local",
+        "path": "./plugins/wait-what"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

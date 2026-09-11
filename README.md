@@ -18,9 +18,19 @@ plugins/
     skills/refinement/
       SKILL.md
       agents/openai.yaml
+  consolidate-jira-absences/
+    .codex-plugin/plugin.json
+    skills/consolidate-jira-absences/
+      SKILL.md
+      agents/openai.yaml
+  wait-what/
+    .codex-plugin/plugin.json
+    skills/wait-what/
+      SKILL.md
+      agents/openai.yaml
 ```
 
-Les deux plugins sont volontairement **skill-only** : aucun MCP ni aucune App n'est requis pour ce POC.
+Les plugins sont volontairement **skill-only** : aucun MCP ni aucune App n'est requis pour ce POC.
 
 ## Publier le POC sur GitHub
 

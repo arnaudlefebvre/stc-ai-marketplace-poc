@@ -1,0 +1,29 @@
+{
+  "name": "wait-what",
+  "version": "0.1.0",
+  "description": "Re-pitch the previous message in Simplified Technical English, adding the missing context and using the repository ubiquitous language when available.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "keywords": [
+    "clarification",
+    "context",
+    "simplified-technical-english",
+    "communication"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Wait What",
+    "shortDescription": "Re-pitch unclear messages with context",
+    "longDescription": "Re-pitch the previous message in Simplified Technical English, adding the missing context and using the repository ubiquitous language when available.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Utilise $wait-what pour reformuler le dernier message avec le contexte manquant."
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "consolidate-jira-absences",
+  "version": "0.1.0",
+  "description": "Analyze Jira absence exports and produce manager-ready staffing, coverage and continuity reports with explicit assumptions and data-quality notes.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "keywords": [
+    "jira",
+    "absence",
+    "leave",
+    "coverage",
+    "staffing",
+    "reporting"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Consolidate Jira Absences",
+    "shortDescription": "Consolidate Jira absence planning",
+    "longDescription": "Analyze Jira absence exports and produce manager-ready staffing, coverage and continuity reports with explicit assumptions and data-quality notes.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Utilise $consolidate-jira-absences pour analyser un CSV Jira de conges et produire une consolidation manageriale."
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consolider les absences Jira"
+  short_description: "Analyse les conges Jira par equipe"
+  default_prompt: "Utilise $consolidate-jira-absences pour analyser un CSV Jira de conges et produire une consolidation manageriale."
