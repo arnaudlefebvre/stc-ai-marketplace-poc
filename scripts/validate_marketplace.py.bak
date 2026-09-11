@@ -88,25 +88,10 @@ def main() -> None:
             if not interface.get(field):
                 fail(f"{name}: interface.{field} is required for this POC")
 
-        mcp_servers = manifest.get("mcpServers")
-        if isinstance(mcp_servers, str):
-            mcp_path = plugin_dir / mcp_servers
-            if not mcp_path.is_file():
-                fail(f"{name}: mcpServers points to missing file {mcp_servers}")
-        elif isinstance(mcp_servers, dict):
-            for server_name, server in mcp_servers.items():
-                if not isinstance(server, dict):
-                    fail(f"{name}: MCP server {server_name!r} must be an object")
-                url = server.get("url")
-                if url is not None and not (isinstance(url, str) and url.startswith("https://")):
-                    fail(f"{name}: MCP server {server_name!r} must use an https URL")
-        elif mcp_servers is not None:
-            fail(f"{name}: mcpServers must be a path or an object")
-
         skills_dir = plugin_dir / "skills"
-        skill_files = list(skills_dir.glob("*/SKILL.md")) if skills_dir.is_dir() else []
-        if not skill_files and mcp_servers is None:
-            fail(f"{name}: plugin must contain at least one skill or MCP server")
+        skill_files = list(skills_dir.glob("*/SKILL.md"))
+        if not skill_files:
+            fail(f"{name}: no skills/*/SKILL.md found")
         for skill_file in skill_files:
             text = skill_file.read_text(encoding="utf-8")
             if not text.startswith("---\n") or "\nname:" not in text or "\ndescription:" not in text:

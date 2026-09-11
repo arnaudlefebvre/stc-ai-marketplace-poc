@@ -1,0 +1,29 @@
+{
+  "name": "atlassian-rovo",
+  "version": "0.1.0",
+  "description": "Connect Codex to Atlassian Rovo MCP for Jira, Confluence and other Atlassian products through the official remote MCP server.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "homepage": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+  "keywords": ["atlassian", "rovo", "mcp", "jira", "confluence"],
+  "mcpServers": {
+    "atlassian": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v2/mcp"
+    }
+  },
+  "interface": {
+    "displayName": "Atlassian Rovo",
+    "shortDescription": "Use Jira and Confluence through Atlassian Rovo MCP",
+    "longDescription": "Connect Codex to the official Atlassian Rovo MCP v2 server to search and work with Jira, Confluence and other Atlassian products using each user's existing Atlassian permissions. Authentication is performed individually through Atlassian OAuth 2.1.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": [
+      "Find my assigned Jira issues.",
+      "Search Confluence for documentation about this project.",
+      "Summarize the Jira context related to this code change."
+    ]
+  }
+}
