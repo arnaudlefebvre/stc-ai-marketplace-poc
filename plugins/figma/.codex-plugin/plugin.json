@@ -1,0 +1,29 @@
+{
+  "name": "figma",
+  "version": "0.1.0",
+  "description": "Connect Codex Desktop to the Figma MCP server.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "keywords": [
+    "figma",
+    "mcp",
+    "design"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Figma",
+    "shortDescription": "Use Figma through its MCP server",
+    "longDescription": "Connect Codex Desktop to the Figma MCP server. Each user authenticates with Figma using their own permissions.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Inspect this Figma design and summarize its structure.",
+      "List the components available in this Figma file."
+    ]
+  }
+}
