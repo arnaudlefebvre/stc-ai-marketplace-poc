@@ -1,0 +1,34 @@
+{
+  "name": "gitlab-mcp",
+  "version": "1.0.0",
+  "description": "Connect Codex Desktop to the internal Santéclair GitLab MCP server.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "homepage": "https://git.app.santeclair.lan/api/v4/mcp",
+  "keywords": [
+    "gitlab",
+    "mcp",
+    "source-control",
+    "issues",
+    "merge-requests"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "GitLab MCP",
+    "shortDescription": "Use Santéclair GitLab through its MCP server",
+    "longDescription": "Connect Codex Desktop to the internal Santéclair GitLab MCP server. Each user authenticates with GitLab using their own permissions.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Search GitLab issues related to this project.",
+      "Summarize the merge requests for this repository.",
+      "Create or update a GitLab issue from this requirement."
+    ]
+  }
+}

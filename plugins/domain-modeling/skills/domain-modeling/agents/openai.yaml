@@ -1,0 +1,6 @@
+interface:
+  display_name: "Domain Modeling"
+  short_description: "Sharpen domain language during design"
+  default_prompt: "Use $domain-modeling to clarify the domain language and model in this design."
+policy:
+  allow_implicit_invocation: true

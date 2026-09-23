@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gitlab": {
+      "type": "http",
+      "url": "https://git.app.santeclair.lan/api/v4/mcp"
+    }
+  }
+}

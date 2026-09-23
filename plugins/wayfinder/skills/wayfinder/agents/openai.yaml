@@ -1,0 +1,6 @@
+interface:
+  display_name: "Wayfinder"
+  short_description: "Plan multi-session work as decision maps"
+  default_prompt: "Use $wayfinder to map this multi-session engineering effort before implementation."
+policy:
+  allow_implicit_invocation: false

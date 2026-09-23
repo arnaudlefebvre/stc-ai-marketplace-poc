@@ -1,6 +1,6 @@
 # Marketplace IA STC - POC
 
-POC de marketplace de plugins Codex / ChatGPT contenant des skills internes Santéclair.
+POC de marketplace de plugins Codex / ChatGPT contenant des skills internes Santéclair et des intégrations MCP.
 
 ## Contenu
 
@@ -40,9 +40,25 @@ plugins/
   grill-with-docs/
     .codex-plugin/plugin.json
     skills/grill-with-docs/
+  gitlab-mcp/
+    .codex-plugin/plugin.json
+    .mcp.json
+  wayfinder/
+    .codex-plugin/plugin.json
+    skills/wayfinder/
+  domain-modeling/
+    .codex-plugin/plugin.json
+    skills/domain-modeling/
 ```
 
-Les plugins sont volontairement **skill-only** : aucun MCP ni aucune App n'est requis pour ce POC.
+La marketplace contient des plugins skill-only ainsi que des plugins MCP. Les plugins MCP ne contiennent aucun secret : chaque utilisateur s'authentifie avec ses propres droits.
+
+Les skills Wayfinder et Domain Modeling sont repris depuis les sources publiques de Matt Pocock :
+
+- https://github.com/mattpocock/skills/blob/main/docs/engineering/wayfinder.md
+- https://github.com/mattpocock/skills/blob/main/docs/engineering/domain-modeling.md
+
+⚠️ Cette documentation et les métadonnées ajoutées ont été produites avec l’assistance d’une IA et nécessitent une relecture humaine.
 
 ## Publier le POC sur GitHub
 
@@ -61,7 +77,7 @@ En tant qu'administrateur du workspace :
 4. Laisser **Path** vide car `.agents/plugins/marketplace.json` se trouve a la racine.
 5. Laisser **Branch** vide pour suivre la branche par defaut, ou indiquer explicitement la branche de POC.
 6. Importer la marketplace.
-7. Verifier les deux plugins puis choisir leur politique d'installation dans le workspace.
+7. Verifier les plugins puis choisir leur politique d'installation dans le workspace.
 
 ## Tester une mise a jour
 

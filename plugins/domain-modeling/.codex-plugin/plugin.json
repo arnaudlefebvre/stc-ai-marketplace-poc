@@ -1,0 +1,31 @@
+{
+  "name": "domain-modeling",
+  "version": "1.0.0",
+  "description": "Sharpen domain language and capture justified modeling decisions during design.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "homepage": "https://github.com/mattpocock/skills/blob/main/docs/engineering/domain-modeling.md",
+  "keywords": [
+    "domain-driven-design",
+    "domain-modeling",
+    "ubiquitous-language",
+    "engineering"
+  ],
+  "interface": {
+    "displayName": "Domain Modeling",
+    "shortDescription": "Sharpen domain language during engineering design",
+    "longDescription": "Use Domain Modeling to clarify ubiquitous language, challenge ambiguous terms, align language with code, and record only justified domain decisions.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use $domain-modeling to clarify the domain language and model in this design."
+    ]
+  },
+  "skills": "./skills/"
+}

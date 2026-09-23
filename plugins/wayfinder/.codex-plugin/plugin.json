@@ -1,0 +1,31 @@
+{
+  "name": "wayfinder",
+  "version": "1.0.0",
+  "description": "Plan multi-session engineering efforts as decision maps before implementation.",
+  "author": {
+    "name": "Santeclair - IA Guild"
+  },
+  "homepage": "https://github.com/mattpocock/skills/blob/main/docs/engineering/wayfinder.md",
+  "keywords": [
+    "planning",
+    "decision-mapping",
+    "engineering",
+    "wayfinder"
+  ],
+  "interface": {
+    "displayName": "Wayfinder",
+    "shortDescription": "Plan large engineering efforts as decision maps",
+    "longDescription": "Use Wayfinder to chart multi-session engineering efforts as decision tickets, resolve uncertainty progressively, and hand off to implementation only after the route is clear.",
+    "developerName": "Santeclair - IA Guild",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use $wayfinder to map this multi-session engineering effort before implementation."
+    ]
+  },
+  "skills": "./skills/"
+}
